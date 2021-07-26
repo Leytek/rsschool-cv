@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Alexander Smirnov - CV</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <img src="./pictures/Avatar.jpg" alt="Avatar">
+                <section>
+                    <h1>Alexander Smirnov</h1>
+                    <p>Web-Frontend Programmer</p>
+                </section>   
+                <h3>Contact info</h3>         
+                <address>                    
+                    <ul>
+                        <li>Email: leytek@yandex.ru</li>
+                        <li>Discord:*__Alexandr Smirnov (@Leytek)_</li>
+                        <li><a href="https://vk.com/id40296460)">VK</a></li>
+                    </ul>
+                </address>
+            </header>
+            <main>
+                <article>
+                    <h2>About me</h2>
+                    <p>I am 28 years old, have an incomplete higher education, at the moment studying on the course RSSchool. I am positive, friendly, open to new things, diligent, attentive to details, responsible. I aim to progress in IT further and become a real professional.</p>
+                    <section>
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>C/C++</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Git</li>
+                            <li>IntelliJ IDEA</li>
+                            <li>VSCode</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Code</h2>
+                        <pre>
+                            <code>
+                            void quickSort(int *tempArray, int first, int last)
+                            { 
+                                int middle;
+                                middle = tempArray[(first + last) / 2];
+                                int f = first, l = last;
+                                while (f &lt; l)
+                                {
+                                    while (tempArray[f] &lt; middle) f++;
+                                    while (tempArray[l] &gt; middle) l--;
+                                    if (f &lt;= l)
+                                    {
+                                        std::swap(tempArray[f], tempArray[l]);
+                                        f++;
+                                        l--;
+                                    }
+                                }
+                                if (first &lt; l) quickSort(tempArray, first, l);
+                                if (f &lt; last) quickSort(tempArray, f, last);
+                            }
+                            </code>
+                        </pre>                    
+                    </section>
+                    <section>
+                        <h2>Experience</h2>
+                        <p>Have no experience as web-frontend programmer.</p>
+                    </section>
+                    <section>
+                        <h2>Education</h2>
+                        <ul>
+                            <li>Incomplete higher education at VOLGA STATE UNIVERSITY OF TECHNOLOGY</li>
+                            <li>Harvard CS50</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>English level</h2>
+                        <p>Pre-intermediate (A2)</p>
+                    </section>
+                </article>
+            </main>
+            <footer>
+                <a href="https://github.com/Leytek"><img src="./images/GitHub-Mark-120px-plus.png" alt="GitHub Logo"></a>
+                <time datetime="2021">2021</time>
+                <a href="https://rs.school/js/"><img src="./images/rs_school_js.svg" alt="RSSchool JS Logo"></a>
+            </footer>
+         </div>    
+    </body>
+</html>
