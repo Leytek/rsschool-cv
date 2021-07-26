@@ -1,0 +1,46 @@
+#wrapper {
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+
+    font: normal 16px/2 Verdana, Arial, sans-serif;
+}
+
+#avatar {
+    width: 30%;
+    height: 30%;
+    border-radius: 40%;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+}
+
+#github-link {
+    width: 60px;
+    height: 60px;
+}
+
+header {
+    margin: 10px 20px;
+}
+
+main {
+    margin: 0 0 20px 0;
+}
+
+section {
+    margin: 10px 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}   
+
+h1 {
+    margin: 0 0 0 0;    
+    font-size: 32px;
+}
