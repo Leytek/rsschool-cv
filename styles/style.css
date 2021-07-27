@@ -1,9 +1,10 @@
 #wrapper {
     width: 70%;
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto;
 
     font: normal 16px/2 Verdana, Arial, sans-serif;
+    background-color: #ddeddd;
 }
 
 #avatar {
@@ -15,6 +16,7 @@
 #header {
     display: flex;
     flex-direction: row;
+    padding: 20px 0;
 }
 
 #github-link {
@@ -22,8 +24,12 @@
     height: 60px;
 }
 
+body {
+    margin: 0;
+}
+
 header {
-    margin: 10px 20px;
+    margin: 0 20px;
 }
 
 main {
@@ -38,13 +44,21 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 20px;
+    padding: 10px 0;
 }   
 
 h1 {
     margin: 0 0 0 0;    
     font-size: 32px;
+    color: #444444;
+}
+
+h2{
+    color: #505050;
 }
 
 h3 {
     margin: 12px 0;
+    color: #555555;
 }
