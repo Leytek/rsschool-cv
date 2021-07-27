@@ -1,10 +1,10 @@
-# Smirnov Alexander
+# Alexander Smirnov
 Web-Frontend Programmer
 
 ## Contact info
 * *Email:*__leytek@yandex.ru, leytek2@gmail.com__
 * *Discord:*__Alexandr Smirnov (@Leytek)__
-* [*vk.com*](__https://vk.com/id40296460__)
+* [*vk.com*](https://vk.com/id40296460)
 
 ## About me
 I am 28 years old, have an incomplete higher education, at the moment studying on the course RSSchool. I am positive, friendly, open to new things, diligent, attentive to details, responsible. I aim to progress in IT further and become a real professional.
