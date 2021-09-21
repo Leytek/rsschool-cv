@@ -23,7 +23,7 @@ I am 28 years old, have an incomplete higher education, at the moment studying o
 ## Code
 ```
 void quickSort(int *tempArray, int first, int last)
-{ 
+{
     int middle;
     middle = tempArray[(first + last) / 2];
     int f = first, l = last;
