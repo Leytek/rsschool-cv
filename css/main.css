@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+ul,
+ol,
+li,
+h1 {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+button,
+input {
+  all: unset;
+}
+
+img,
+video {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+li {
+  list-style: none;
+}
+
+pre {
+  all: unset;
+}
+
+.page {
+  font: 300 18px/2 "Roboto", Arial, sans-serif;
+  color: #eeeeee;
+  background: #070707;
+}
+
+.page__wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: #464646;
+}
+
+@media screen and (max-width: 1000px) {
+  .page__wrapper {
+    grid-template-columns: 100%;
+  }
+}
+
+.page__header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .page__header {
+    display: block;
+  }
+}
+
+.page__header_avatar {
+  width: 50vh;
+  height: 50vh;
+  margin: 30px 0 0;
+  border-radius: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  .page__header_avatar {
+    margin: auto;
+  }
+}
+
+.page__header_text {
+  margin: auto;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.page .nav__bar {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.page .nav__bar_list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.page .nav__bar_link {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #eeeeee;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.page .nav__bar_link:hover {
+  background: #333333;
+}
+
+.page__main {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+@media screen and (max-width: 1000px) {
+  .page__main {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+.page__main h2::after {
+  content: "";
+  display: block;
+  height: 3px;
+  margin-top: 15px;
+  background: #eeeeee;
+}
+
+.page__main .projects__card {
+  display: block;
+  max-width: 400px;
+  width: 95%;
+  margin: auto;
+  color: #eeeeee;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.page__main .projects__card figure {
+  margin: 0;
+}
+
+.page__main .projects__card:hover {
+  background: #333333;
+}
+
+.page__main .projects__card img {
+  width: 100%;
+  height: 100%;
+}
+
+.page__main .projects__card figcaption {
+  text-align: center;
+}
+
+.page__aside {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .page__aside {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+
+.page__aside .link {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.page__footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 20px;
+  padding: 10px 0;
+}
+
+.page__footer .github_link {
+  width: 160px;
+}
+
+.page__footer .github_link img {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+}
+/*# sourceMappingURL=main.css.map */
