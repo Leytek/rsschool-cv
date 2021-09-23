@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Alexander Smirnov - CV</title>
+        <link rel="icon" href="assets/svg/favicon.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/an-old-hope.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    </head>
+    <body class="page">
+        <div class="page__wrapper">
+            <header class="page__header">
+                <section class="page__header_text">
+                    <h1>Alexander Smirnov</h1>
+                    <p>Web-Frontend Developer</p>
+                </section>
+                <img class="page__header_avatar" src="./assets/img/avatar.jpg" alt="Avatar" width="550" height="550">
+                <button class="nav__bar_button" title=""></button>
+            </header>
+            <nav class="nav__bar">
+                <ul class="nav__bar_list">
+                    <li><a class="nav__bar_link" href="#about">About</a></li>
+                    <li><a class="nav__bar_link" href="#projects">Projects</a></li>
+                    <li><a class="nav__bar_link" href="#skills">Skills</a></li>
+                    <li><a class="nav__bar_link" href="#code">Code</a></li>
+                    <li><a class="nav__bar_link" href="#experience">Experience</a></li>
+                    <li><a class="nav__bar_link" href="#education">Education</a></li>
+                    <li><a class="nav__bar_link" href="#languages">Languages</a></li>
+                </ul>
+            </nav>
+            <main class="page__main">
+                <article>
+                    <header class="about" id="about">
+                        <h2>About me</h2>
+                        <p>I am 28 years old, have an incomplete higher education, at the moment studying on the course RSSchool. I am positive, friendly, open to new things, diligent, attentive to details, responsible. I aim to progress in IT further and become a real professional.</p>
+                    </header>
+                    <section class="projects" id="projects">
+                        <h2>Projects</h2>
+                        <a class="projects__card" href="https://rolling-scopes-school.github.io/leytek-JSFEPRESCHOOL/museum" target="_blank">
+                            <figure>
+                                <img src="assets/img/museum.png" alt="Museum Project" width="1920" height="1080">
+                                <figcaption>Landing page for Louvre museum <br>
+                                    using HTML, CSS, JS
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </section>
+                    <section class="code" id="code">
+                        <h2>Code example</h2>
+                        <details>
+                            <summary>Show code</summary>
+                            <pre>
+                                <code class="language-javascript hljs" id="raw_code">function isBST(node, min, max){
+                                    return !node ? true : node.value > min || node.value &lt; max ? false :
+                                    isBST(node.left, node.value, max) && isBST(node.right, min, node.value) ||
+                                    isBST(node.left, min, node.value) && isBST(node.right, node.value, max)}</code>
+                                </pre>
+                        </details>
+                    </section>
+                    <section class="experience" id="experience">
+                        <h2>Experience</h2>
+                        <p>Have no experience as web-frontend developer.</p>
+                    </section>
+                    <section class="education" id="education">
+                        <h2>Education</h2>
+                        <ul>
+                            <li>Incomplete higher education at VOLGA STATE UNIVERSITY OF TECHNOLOGY</li>
+                            <li>Harvard CS50</li>
+                        </ul>
+                    </section>
+                    <section class="languages" id="languages">
+                        <h2>English level</h2>
+                        <p>Pre-intermediate (A2)</p>
+                    </section>
+                </article>
+            </main>
+            <aside class="page__aside">
+                <section class="skills" id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>C/C++</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Git</li>
+                        <li>IntelliJ IDEA</li>
+                        <li>VSCode</li>
+                    </ul>
+                </section>
+                <h3>Contact info</h3>
+                <address>
+                    <ul>
+                        <li>Email: leytek@yandex.ru</li>
+                        <li>Discord: Alexander Smirnov (Leytek)#3242</li>
+                        <li><a class="link" href="https://vk.com/id40296460">VK</a></li>
+                    </ul>
+                </address>
+            </aside>
+            <footer class="page__footer">
+                <a class="github_link" href="https://github.com/Leytek"><img src="./assets/img/github_log.png" alt="GitHub Logo" width="120" height="120"></a>
+                <time datetime="2021">2021</time>
+                <a class="rsschool_link" href="https://rs.school/js/"><img src="./assets/svg/rs_school_js.svg" alt="RSSchool JS Logo" width="162" height="60"></a>
+            </footer>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
