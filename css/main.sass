@@ -1,0 +1,211 @@
+@import reset
+
+$font_stack: 300 18px/2 "Roboto", Arial, sans-serif
+$font_color: #eeeeee
+$page_bg_color: #070707
+$content_bg_color: #4e4e4e
+$content_bg_color_dark: #333333
+$animation: .3s
+
+.page
+  font: $font_stack
+  color: $font_color
+  background: $page_bg_color
+
+  &__wrapper
+    display: grid
+    grid-template-columns: 70% 30%
+    max-width: 900px
+    margin: 0 auto
+    padding: 0 30px
+    background-color: $content_bg_color
+    @media screen and ( max-width: 1000px  )
+      grid-template-columns: 100%
+      max-width: none
+      margin: 0
+
+  h2::after,
+  h3::after
+    content: ""
+    display: block
+    height: 3px
+    margin-top: 15px
+    background: #fffd75
+
+  &__header
+    grid-column-start: 1
+    grid-column-end: 3
+    grid-row-start: 1
+    grid-row-end: 2
+    display: flex
+    margin-bottom: 20px
+
+    @media screen and ( max-width: 1000px  )
+      display: block
+
+    &_avatar
+      width: 252px
+      height: 252px
+      margin: 30px 0 0
+      border-radius: 40%
+
+      @media screen and ( max-width: 1000px  )
+        margin: 220px auto 0
+
+    &_text
+      margin: auto
+      font-size: 1.5em
+      text-align: center
+
+      @media screen and ( max-width: 1000px  )
+        position: fixed
+        left: 0
+        width: 100%
+        height: 200px
+        font-size: 2em
+        background: $page_bg_color
+        z-index: 1
+
+      & p
+        margin-top: 0
+
+    & .nav__bar_button
+      display: none
+      position: fixed
+      top: 0
+      right: 0
+      width: 200px
+      height: 200px
+      z-index: 1
+
+      @media screen and ( max-width: 1000px  )
+        display: block
+
+      &:hover
+        background: $content_bg_color
+
+      &::after
+        content: ""
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+        width: 200px
+        height: 200px
+        -webkit-mask-image: url(../assets/svg/menu.svg)
+        -webkit-mask-size: 70%
+        -webkit-mask-position: center
+        -webkit-mask-repeat: no-repeat
+        mask-image: url(../assets/svg/menu.svg)
+        mask-size: 70%
+        mask-position: center
+        mask-repeat: no-repeat
+        background: $font_color
+
+  .nav__bar
+    display: flex
+    grid-column-start: 1
+    grid-column-end: 3
+    grid-row-start: 2
+    grid-row-end: 3
+    transition: all $animation
+
+    @media screen and ( max-width: 1000px  )
+      position: fixed
+      top: -570px
+      left: 0
+      width: 70%
+      font-size: 2em
+      background: $content_bg_color_dark
+
+    &_list
+      display: flex
+      justify-content: space-between
+      align-content: center
+
+      @media screen and ( max-width: 1000px  )
+        display: block
+        width: 100%
+        padding-left: 20px
+
+    &_link
+      display: block
+      padding: 0 10px
+      font-size: 1.5em
+      color: #47ff9a
+      text-decoration: none
+      transition: all $animation
+
+      &:hover
+        background: $content_bg_color_dark
+
+  .show
+      @media screen and ( max-width: 1000px  )
+        top: 200px
+
+  &__main
+    grid-column-start: 1
+    grid-row-start: 3
+    grid-row-end: 5
+
+    @media screen and ( max-width: 1000px  )
+      grid-row-start: 3
+      grid-row-end: 4
+
+    .projects
+      &__card
+        display: block
+        max-width: 400px
+        width: 95%
+        margin: auto
+        padding: 20px
+        color: $font_color
+        text-decoration: none
+        transition: all .5s
+
+        figure
+          margin: 0
+
+        &:hover
+          background: $content_bg_color_dark
+
+        img
+          width: 100%
+          height: 100%
+
+        figcaption
+          text-align: center
+
+  &__aside
+    grid-column-start: 1
+    grid-row-start: 4
+    grid-row-end: 5
+
+    @media screen and ( min-width: 1001px  )
+      grid-column-start: 2
+      grid-row-start: 3
+      grid-row-end: 5
+      padding-left: 20px
+
+    .link
+      color: #74acff
+      text-decoration: none
+
+  &__footer
+    grid-column-start: 1
+    grid-column-end: 3
+    grid-row-start: 5
+    grid-row-end: 6
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin: 0 20px
+    padding: 10px 0
+
+    .github_link
+      width: 160px
+
+      img
+        width: 60px
+        height: 60px
+        margin: auto
