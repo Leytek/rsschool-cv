@@ -236,6 +236,7 @@ pre {
   max-width: 400px;
   width: 95%;
   margin: auto;
+  padding: 20px;
   color: #eeeeee;
   text-decoration: none;
   transition: all .5s;
